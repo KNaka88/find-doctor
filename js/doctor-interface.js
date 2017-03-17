@@ -1,5 +1,4 @@
 var Doctor = require("./../js/doctor.js").doctorModule;
-var googleApiKey = require('./../.env').googleApiKey;
 
 
 var displayResults = function(resultArray){
