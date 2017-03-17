@@ -1,4 +1,23 @@
+$lightgray: #becadb;
+
 #map {
   height: 400px;
   width: 100%;
+}
+
+.show_doctor {
+  border-top: 2px solid $lightgray;
+
+  img {
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+
+  .image, .contact, .summary, .bio {
+      border-left: 2px solid $lightgray;
+      height: 100%;
+  }
+
+
+
 }
