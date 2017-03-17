@@ -3,11 +3,16 @@ var googleApiKey = require('./../.env').googleApiKey;
 
 
 var displayResults = function(resultArray){
-
+  $("#result").show();
   if(resultArray[0] === undefined){
     $("#result").append("<h2>No Result</h2>");
   }else{
     for(var i=0; i<resultArray.length; i++){
+
+      if(resultArray[i].website === "no data"){
+        resultArray[i].website = "";
+      } 
+
       $("#result").append(
         "<div class='show_doctor'>" +
         "<div class='row'>" +

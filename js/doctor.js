@@ -25,22 +25,23 @@ Doctor.prototype.getDoctors = function(query, callback){
     var resultArray = [];
 
     for(var i=0; i<response.data.length; i++){
-      name.push(response.data[i].practices[0].name);
-      description.push(response.data[i].practices[0].description);
-      website.push(response.data[i].practices[0].website);
-      city.push(response.data[i].practices[0].visit_address.city);
-      lat.push(response.data[i].practices[0].visit_address.lat);
-      lon.push(response.data[i].practices[0].visit_address.lon);
-      state.push(response.data[i].practices[0].visit_address.state);
-      street.push(response.data[i].practices[0].visit_address.street);
-      street2.push(response.data[i].practices[0].visit_address.street2);
-      zip.push(response.data[i].practices[0].visit_address.zip);
-      phone_number.push(response.data[i].practices[0].phones[0].number);
-      languages.push(response.data[i].practices[0].languages[0].name);
-      image_url.push(response.data[i].profile.image_url);
-      bio.push(response.data[i].profile.bio);
-      specialities.push(response.data[i].specialties[0].name);
-      specialities_description.push(response.data[i].specialties[0].description);
+      //if specific element was empty (undefined), push string "no data"
+      name.push(response.data[i].practices[0].name === undefined ? "no data" : response.data[i].practices[0].name);
+      description.push(response.data[i].practices[0].description === undefined ? "no data" : response.data[i].practices[0].description);
+      website.push(response.data[i].practices[0].website === undefined ? "no data" : response.data[i].practices[0].website);
+      city.push(response.data[i].practices[0].visit_address.city === undefined ? "no data" : response.data[i].practices[0].visit_address.city);
+      lat.push(response.data[i].practices[0].visit_address.lat === undefined ? "no data" : response.data[i].practices[0].visit_address.lat);
+      lon.push(response.data[i].practices[0].visit_address.lon === undefined ? "no data" : response.data[i].practices[0].visit_address.lon);
+      state.push(response.data[i].practices[0].visit_address.state === undefined ? "no data" : response.data[i].practices[0].visit_address.state);
+      street.push(response.data[i].practices[0].visit_address.street === undefined ? "no data" : response.data[i].practices[0].visit_address.street);
+      street2.push(response.data[i].practices[0].visit_address.street2 === undefined ? "no data" : response.data[i].practices[0].visit_address.street2);
+      zip.push(response.data[i].practices[0].visit_address.zip === undefined ? "no data" : response.data[i].practices[0].visit_address.zip);
+      phone_number.push(response.data[i].practices[0].phones[0].number === undefined ? "no data" : response.data[i].practices[0].phones[0].number);
+      languages.push(response.data[i].practices[0].languages[0].name === undefined ? "no data" : response.data[i].practices[0].languages[0].name);
+      image_url.push(response.data[i].profile.image_url === undefined ? "no data" : response.data[i].profile.image_url);
+      bio.push(response.data[i].profile.bio === undefined ? "no data" : response.data[i].profile.bio);
+      specialities.push(response.data[i].specialties[0].name === undefined ? "no data" : response.data[i].specialties[0].name);
+      specialities_description.push(response.data[i].specialties[0].description === undefined ? "no data" : response.data[i].specialties[0].description);
 
       var result = {
         name: name[i],
@@ -61,6 +62,10 @@ Doctor.prototype.getDoctors = function(query, callback){
         specialities_description: specialities_description[i]
       };
       resultArray.push(result);
+
+
+
+
     }
     callback(resultArray);
   })
