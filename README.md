@@ -10,8 +10,6 @@
 
 ## Specifications
 
-ADD SPECS!!!!!!!
-
 |Behavior|Input|Output|
 |--------|-----|------|
 | User can search Doctors by query    | "toothache"  | Doctor's name, image, contact info, .etc |
@@ -29,9 +27,7 @@ ADD SPECS!!!!!!!
 6. $ gulp serve
 
 * if you are not sure how to install node.js [see this link](https://www.learnhowtoprogram.com/javascript/getting-started-with-javascript-2f9a73dc-b7f5-4a22-9101-e69d49f552ac/installing-node-js).
-
-* if you are not sure how to install gulp [see this link](https://www.learnhowtoprogram.com/javascript/modern-js-apps/introducing-bower.
-
+* if you are not sure how to install gulp [see this link](https://www.learnhowtoprogram.com/javascript/modern-js-apps/introducing-bower).
 * if you are not sure how to install Sass [see this link](https://www.learnhowtoprogram.com/javascript/modern-js-apps/sass-with-gulp).
 
 
