@@ -1,0 +1,17 @@
+{
+  "name": "find-doctor",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Koji Nakagawa <lightupthesky0627@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
