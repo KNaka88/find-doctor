@@ -31,7 +31,7 @@ var displayResults = function(resultArray){
         "<p>" +
         "<span id='street'>"+resultArray[i].street+"</span><span id='street2'>"+ resultArray[i].street2+"</span>,&nbsp;<span id='state'>"+resultArray[i].state+"</span>,&nbsp;<span id='zip'>"+resultArray[i].zip+"</span>" +
         "</p>" +
-        "<a href='https://www.google.com/maps/place/"+resultArray[i].street+"+"+resultArray[i].street2+"+"+resultArray[i].state+"'target=”_blank”><button type='button'class='btn location_button'>Open Google Map</button></a>" +
+        "<a href='https://www.google.com/maps/place/"+resultArray[i].street+"+"+resultArray[i].street2+"+"+resultArray[i].state+"'target=”_blank”><button type='button'class='btn btn-info location_button'>Open Google Map</button></a>" +
         "</div>" +
         "<div class='col-md-12 summary'>" +
         "<h3>Summary</h3>" +

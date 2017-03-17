@@ -1,7 +1,24 @@
 $lightgray: #becadb;
 
+h1 {
+  font-size: 6.5rem;
+  letter-spacing: 5px;
+  margin-top: 5%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+img.bg-image {
+  display:block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #bcdce5;
+}
 
 .show_doctor {
+  margin-top: 10px;
   border-top: 2px solid $lightgray;
 
   img {
@@ -13,6 +30,22 @@ $lightgray: #becadb;
       border-left: 2px solid $lightgray;
       height: 100%;
   }
+}
+
+form {
+  display:block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 500px;
+}
+
+
+button {
+  margin-top: 20px;
+  width: 180px;
+  margin-bottom: 30px;
 }
 
 #result {
