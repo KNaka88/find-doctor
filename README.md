@@ -1,8 +1,10 @@
 ##STEP
 
 1. Install all dependencies and check work without errors
+OK
 
 2. Create user input form(index.html) and Datahandling form (doctor-interface.js)
+
 
 3. Create Doctor class and prototype (doctor.js)
 
