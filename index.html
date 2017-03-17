@@ -5,11 +5,16 @@
     <link rel="stylesheet" href="build/css/vendor.css">
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
-     <script type="text/javascript" src="build/js/app.js"></script>
+    <script src='js/location-interface.js'></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHYaZplmGwHbqg7pBttXYNjqdv8Xq0fTk&callback=initMap">
+    </script>
     <title>Find Doctor</title>
   </head>
   <body>
     <h1>Find Doctor</h1>
+    <div id='map'></div>
     <form id='search_form'>
       <input type='text' id='query' placeholder='Type Keyword &#40;e.g. Toothache&#41;'>
       <button type='submit' class='btn btn-info'>Search</button>
@@ -19,6 +24,8 @@
     <h2>Search Result</h2>
     <div id='result'>
       <!-- search results goes here... -->
+
+
 
 
   </body>

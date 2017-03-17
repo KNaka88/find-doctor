@@ -1,5 +1,5 @@
 var Doctor = require("./../js/doctor.js").doctorModule;
-
+var googleApiKey = require('./../.env').googleApiKey;
 
 
 var displayResults = function(resultArray){
@@ -17,7 +17,7 @@ var displayResults = function(resultArray){
         "</div>" +
         "<div class='col-md-8'>" +
           "<h3>Where I practice</h3>" +
-          // <!-- googlemap -->
+          // "<div id='map'></div>" +
         "</div>" +
         "<div class='col-md-4'>" +
           "<h3>Contact Info</h3>" +
