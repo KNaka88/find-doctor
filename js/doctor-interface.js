@@ -3,6 +3,7 @@ var googleApiKey = require('./../.env').googleApiKey;
 
 
 var displayResults = function(resultArray){
+  $("#result").empty();
   $("#result").show();
   if(resultArray[0] === undefined){
     $("#result").append("<h2>No Result</h2>");
@@ -11,7 +12,7 @@ var displayResults = function(resultArray){
 
       if(resultArray[i].website === "no data"){
         resultArray[i].website = "";
-      } 
+      }
 
       $("#result").append(
         "<div class='show_doctor'>" +
@@ -30,7 +31,7 @@ var displayResults = function(resultArray){
         "<p>" +
         "<span id='street'>"+resultArray[i].street+"</span><span id='street2'>"+ resultArray[i].street2+"</span>,&nbsp;<span id='state'>"+resultArray[i].state+"</span>,&nbsp;<span id='zip'>"+resultArray[i].zip+"</span>" +
         "</p>" +
-        "<button type='button class='location_button'>See Location</button>" +
+        "<a href='https://www.google.com/maps/place/"+resultArray[i].street+"+"+resultArray[i].street2+"+"+resultArray[i].state+"'target=”_blank”><button type='button'class='btn location_button'>Open Google Map</button></a>" +
         "</div>" +
         "<div class='col-md-12 summary'>" +
         "<h3>Summary</h3>" +
@@ -41,8 +42,6 @@ var displayResults = function(resultArray){
         "<p id='bio'>"+resultArray[i].bio+"</p>" +
         "</div>" +
         "</div> <!--end of row -->" +
-        "<p class='lat'>"+resultArray[i].lat+"</p>" +
-        "<p class='lon'>"+resultArray[i].lon+"</p>" +
         "</div>"
       );
     }

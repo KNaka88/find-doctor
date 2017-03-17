@@ -1,22 +1,3 @@
-##STEP
-
-1. Install all dependencies and check work without errors
-OK
-
-2. Create user input form(index.html) and Datahandling form (doctor-interface.js)
-OK
-
-3. Create Doctor class and prototype (doctor.js)
-OK
-4. create AJAX handling program and check if it is working (doctor-interface.js)
-OK
-5. create display program by using callback
-
-6. adjust layout
-
-7. add google map results and additional query
-
-
 #Koji Nakagawa
 
 #### Javascript 1st Week Independent Project for Epicodus, 3.17.2017
@@ -33,7 +14,7 @@ ADD SPECS!!!!!!!
 
 |Behavior|Input|Output|
 |--------|-----|------|
-| User can search Doctors by query    | "toothache"  | Doctor's name, bio, image, etc |
+| User can search Doctors by query    | "toothache"  | Doctor's name, image, contact info, .etc |
 
 ## Setup/Installation Requirements
 1. Clone this repository
