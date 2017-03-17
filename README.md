@@ -4,12 +4,12 @@
 OK
 
 2. Create user input form(index.html) and Datahandling form (doctor-interface.js)
-
+OK
 
 3. Create Doctor class and prototype (doctor.js)
-
+OK
 4. create AJAX handling program and check if it is working (doctor-interface.js)
-
+OK
 5. create display program by using callback
 
 6. adjust layout
